@@ -2,6 +2,9 @@ $(function() {
     $( "spoiler" ).accordion({
       collapsible: true
     });
+    $( "#spoilerq" ).accordion({
+      collapsible: true
+    });
   });
   var array=[];
   for(var ii = 0; ii < 10; ii++) {
