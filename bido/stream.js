@@ -29,9 +29,13 @@ for (hehe = 0; hehe < liskode.length; hehe++) {
 document.getElementById("tempatserver").innerHTML=isiserver;
 var hoho;
 var lisidtombolserver = [];
-for (hoho = 0; hoho < liskode.length; hoho++) { 
+
+$( document ).ready(function() {
+    for (hoho = 0; hoho < liskode.length; hoho++) { 
     lisidtombolserver[hoho]="#tombol"+hoho;
     $(lisidtombolserver[hoho]).click(function() {
         $("#tempatstream").html(liskode[hoho]);
     });
 };
+});
+
