@@ -19,13 +19,12 @@ var liskode = [
 "<iframe width='640' height='360' src='http://vidup.me/embed-40y79m0d986j.html' frameborder='0' allowfullscreen></iframe>",
 "<IFRAME SRC='https://vidtodo.com/embed-xb2485e0w8vq.html' FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen='true' WIDTH=940 HEIGHT=397></IFRAME>"
 ];
-alert(liskode[0]);
-document.getElementById("tempatstream").innerHTML="tes";
+document.getElementById("tempatstream").innerHTML=liskode[0];
 
 var isiserver = "";
 var hehe;
 for (hehe = 0; hehe < liskode.length; hehe++) { 
-    isiserver += "<button id='tombol"+hehe+"'>"+(hehe+1).toString()+"</button>";
+    isiserver += "<button class='btn btn-info' id='tombol"+hehe+"'>"+(hehe+1).toString()+"</button> ";
 };
 document.getElementById("tempatserver").innerHTML=isiserver;
 var hoho;
