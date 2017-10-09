@@ -24,7 +24,7 @@ document.getElementById("tempatstream").innerHTML=liskode[0];
 var isiserver = "";
 var hehe;
 for (hehe = 0; hehe < liskode.length; hehe++) { 
-    isiserver += "<button class='btn btn-info' id='tombol"+hehe+"'>"+(hehe+1).toString()+"</button> ";
+    isiserver += "<a class='btn btn-info' id='tombol"+hehe+"'>"+(hehe+1).toString()+"</a> ";
 };
 document.getElementById("tempatserver").innerHTML=isiserver;
 var hoho;
