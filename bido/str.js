@@ -8,9 +8,11 @@ var liskode = [
 var indeks = Math.floor(Math.random()*liskode.length);
 var ling = liskode[indeks];
 document.getElementById("tempatstream").innerHTML = "<iframe width='640' height='480' src='"+ling+"' scrolling='no' frameborder='0' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>";
-document.getElementById("tombolgue").innerHTML = "<button onclick='fungsigue()'>hehe</button>";
-function fungsigue(){
-  indeks = Math.floor(Math.random()*liskode.length);
-  ling = liskode[indeks];
+var hehe;
+for (hehe=0;hehe<liskode.length;hehe++){
+  document.getElementById("tombolgue").innerHTML = "<button onclick='fungsigue("+hehe+")'>"+(hehe+1).toString()+"</button>";
+};
+function fungsigue(xxx){
+  ling = liskode[xxx];
   document.getElementById("tempatstream").innerHTML = "<iframe width='640' height='480' src='"+ling+"' scrolling='no' frameborder='0' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>";
 };
