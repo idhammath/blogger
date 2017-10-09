@@ -23,20 +23,17 @@ document.getElementById("tempatstream").innerHTML=liskode[0];
 
 var isiserver = "";
 var hehe;
+var antri;
 for (hehe = 0; hehe < liskode.length; hehe++) { 
-    isiserver += "<a class='btn btn-info' id='tombol"+hehe+"'>"+(hehe+1).toString()+"</a> ";
+    isiserver += "<button class='btn btn-info' id='tombol"+hehe+"'>"+(hehe+1).toString()+"</button> ";
 };
 document.getElementById("tempatserver").innerHTML=isiserver;
 var hoho;
 var lisidtombolserver = [];
-
-$( document ).ready(function() {
     for (hoho = 0; hoho < liskode.length; hoho++) { 
-    lisidtombolserver[hoho]="#tombol"+hoho;
-    $(lisidtombolserver[hoho]).click(function() {
-        $("#tempatstream").html(liskode[hoho]);
-    });
-};
-    alert(lisidtombolserver[0]);
+    lisidtombolserver[hoho]="tombol"+hoho;
+ document.getElementById(lisidtombolserver[hoho]).addEventListener("click", function(){
+    document.getElementById("tempatstream").innerHTML = liskode[hoho];
 });
+};
 
