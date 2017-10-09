@@ -37,5 +37,6 @@ $( document ).ready(function() {
         $("#tempatstream").html(liskode[hoho]);
     });
 };
+    alert(lisidtombolserver[0];
 });
 
