@@ -33,7 +33,8 @@ var lisidtombolserver = [];
     for (hoho = 0; hoho < liskode.length; hoho++) { 
     lisidtombolserver[hoho]="tombol"+hoho;
  document.getElementById(lisidtombolserver[hoho]).addEventListener("click", function(){
-    document.getElementById("tempatstream").innerHTML = liskode[hoho];
+    document.getElementById("tempatstream").innerHTML = "";
+     alert(liskode[hoho]);
 });
 };
 
