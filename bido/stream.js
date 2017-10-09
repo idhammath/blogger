@@ -20,7 +20,7 @@ var liskode = [
 "<IFRAME SRC='https://vidtodo.com/embed-xb2485e0w8vq.html' FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen='true' WIDTH=940 HEIGHT=397></IFRAME>"
 ];
 document.getElementById("tempatstream").innerHTML=liskode[0];
-
+alert(liskode);
 var isiserver = "";
 var hehe;
 var antri;
