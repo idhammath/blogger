@@ -19,8 +19,7 @@ var liskode = [
 "<iframe width='640' height='360' src='http://vidup.me/embed-40y79m0d986j.html' frameborder='0' allowfullscreen></iframe>",
 "<IFRAME SRC='https://vidtodo.com/embed-xb2485e0w8vq.html' FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen='true' WIDTH=940 HEIGHT=397></IFRAME>"
 ];
-document.getElementById("tempatstream").innerHTML=liskode[0];
-alert(liskode);
+document.getElementById("tempatstream").innerHTML=liskode[3];
 var isiserver = "";
 var hehe;
 var antri;
