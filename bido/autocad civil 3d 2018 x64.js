@@ -44,7 +44,7 @@ var ling = [
 ["Vidup",""],
 ["VidToDo",""],
 ["Youwatch",""],
-["Google Drive","https://goo.gl/QZyUVz"]
+["Google Drive","https://goo.gl/GVSfiu"]
 ];
 var idtombol = ["faststore","keepshare","uptobox","userscloud","senditcloud","xeupload","ultimatedown","openload","uploadsto","uplodws","douploads","uploadmn","clicknupload","fileflares","uploadocean","bdupload","uploadx","indishare","filefactory","oboom","fourdownfiles","uploadboy","filescdn","bestream","flashxtv","vidloxtv","streamango","streamcherry","vidoza","clipwatching","rapidvideo","estream","vodlock","vidtome","thevideo","watchers","streamin","videowood","vidup","vidtodo","youwatch","googledrive"];
 var idtombol2 = [];
