@@ -85,20 +85,3 @@ function muncultombol(){
   $("#tempattombol").show();
   $("#tombolgetlink").hide();
 };
-</script>
-</head>
-<body>
-<!-- First Container -->
-<div class="container-fluid bg-info text-center">
-<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=996325&format=728x90&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/996325" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" /></a></noscript>
-<p id="tempatiklanhori"></p>
-<p id="tempatiklanpersegi"></p>
-<!-- START AD CODE -->
-<script language="javascript" type="text/javascript" charset="utf-8">
-var cpxcenter1522_banner_border = '#990033';
-var cpxcenter1522_banner_text = '#000000';
-var cpxcenter1522_banner_bg = '#FFFFFF';
-cpxcenter1522_banner_link = '#000000';
-cpxcenter1522_width = 250;
-cpxcenter1522_height = 250;
