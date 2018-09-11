@@ -1,32 +1,46 @@
-var tombpen = ["pen2", "pen3"];
+var tombpen = ["pen1","pen2", "pen3"];
+var tulisancek =["cek1","cek2"];
 var i;
 for (i = 0; i < tombpen.length; i++) { 
     $("#"+tombpen[i]).hide();
 };
+var j;
+for (i = 0; i < tulisancek.length; i++) { 
+    $("#"+tulisancek[i]).hide();
+};
 nilai=0;
 $(document).ready(function(){
-  function testes(){
-     $(".sal2").off("click");
-    $(".ben2").off("click");
-    $(".sal2").removeClass("sal2 btn-dark").addClass("btn-danger");
-    $(".ben2").removeClass("ben2 btn-dark").addClass("btn-success");
-    $("#cek2").css("font-weight","bold");
-    $("#cek2").show();
-    $("#pen2").show();
+  function testes(benar,salah,katacek,tombolpeny){
+     $("."+salah).off("click");
+    $("."+benar).off("click");
+    $("."+salah).removeClass("btn-dark").addClass("btn-danger");
+    $("."+benar).removeClass("btn-dark").addClass("btn-success");
+    $("#"+katacek).css("font-weight","bold");
+    $("#"+katacek).show();
+    $("#"+tombolpeny).show();
    
-  }
-  $("#cek2").hide();
+  };
+  $(".sal1").click(function(){
+    $("#cek1").html("SALAH!!");
+    testes("ben1","sal1","cek1","pen1");
+  });
+  $(".ben1").click(function(){
+    $("#cek1").html("BENAR!!");
+    nilai+=1;
+    console.log(nilai);
+    testes("ben1","sal1","cek1","pen1");
+  });
   $(".sal2").click(function(){
     $("#cek2").html("SALAH!!");
-    testes();
+    testes("ben2","sal2","cek2","pen2");
   });
   $(".ben2").click(function(){
     $("#cek2").html("BENAR!!");
     nilai+=1;
     console.log(nilai);
-    testes();
+    testes("ben2","sal2","cek2","pen2");
   });
-  $("#cek3").click(function(){
+  $("#tomcek3").click(function(){
     if ($("#pembilang3").val()=="1"&&$("#penyebut3").val()=="2") {
       $( this ).replaceWith( "<b>BENAR!!</b>" );
     } else {$( this ).replaceWith( "<b>SALAH!!</b>" )};
