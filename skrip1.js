@@ -12,6 +12,7 @@ $(document).ready(function(){
     $("#pen2").show();
     $(".sal2").off("click");
     $(".ben2").off("click");
+    testes();
   });
   $(".ben2").click(function(){
     $(".ben2").removeClass("ben2 btn-dark").addClass("btn-success");
