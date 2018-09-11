@@ -1,1 +1,3 @@
-document.write('<div id="tester" style="display:none">an advertisemen</div>'); 
+$(document).ready(function(){
+  $("#huhu").html(tes[1]);
+})
