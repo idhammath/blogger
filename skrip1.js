@@ -1,3 +1,8 @@
+var tombpen = ["pen2", "pen3"];
+var i;
+for (i = 0; i < tombpen.length; i++) { 
+    $("#"+tombpen[i]).hide();
+};
 $("#pen2").hide();
 nilai=0;
 $(document).ready(function(){
@@ -21,5 +26,10 @@ $(document).ready(function(){
     nilai+=1;
     console.log(nilai);
     testes();
+  });
+  $("#cek3").click(function(){
+    if ($("#pembilang3").val()=="1"&&$("#penyebut3").val()=="2") {
+      $( this ).replaceWith( "<b>BENAR!!</b>" );
+    } else {$( this ).replaceWith( "<b>SALAH!!</b>" );
   });
 });
