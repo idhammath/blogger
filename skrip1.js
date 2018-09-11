@@ -7,6 +7,7 @@ $(document).ready(function(){
     $("#cek2").css("font-weight","bold");
     $("#cek2").show();
     $("#pen2").show();
+    $("#sal2").off("click");
   });
   $(".ben2").click(function(){
     $(".ben2").removeClass("ben2 btn-dark").addClass("btn-success");
