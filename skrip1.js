@@ -1,5 +1,8 @@
 $("#pen2").hide();
 $(document).ready(function(){
+  function testes(){
+    console.log("hehe");
+  }
   $("#cek2").hide();
   $(".sal2").click(function(){
     $(".sal2").removeClass("sal2 btn-dark").addClass("btn-danger");
