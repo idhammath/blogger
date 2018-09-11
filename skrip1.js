@@ -3,7 +3,6 @@ var i;
 for (i = 0; i < tombpen.length; i++) { 
     $("#"+tombpen[i]).hide();
 };
-$("#pen2").hide();
 nilai=0;
 $(document).ready(function(){
   function testes(){
@@ -30,6 +29,7 @@ $(document).ready(function(){
   $("#cek3").click(function(){
     if ($("#pembilang3").val()=="1"&&$("#penyebut3").val()=="2") {
       $( this ).replaceWith( "<b>BENAR!!</b>" );
-    } else {$( this ).replaceWith( "<b>SALAH!!</b>" );
+    } else {$( this ).replaceWith( "<b>SALAH!!</b>" )};
+      $("#pen3").show();
   });
 });
