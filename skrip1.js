@@ -1,5 +1,3 @@
-var tombpen = ["pen1","pen2", "pen3"];
-var tulisancek =["cek1","cek2"];
 var i;
 for (i = 0; i < tombpen.length; i++) { 
     $("#"+tombpen[i]).hide();
