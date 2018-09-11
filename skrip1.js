@@ -1,4 +1,5 @@
 $("#pen2").hide();
+nilai=0;
 $(document).ready(function(){
   function testes(){
      $(".sal2").off("click");
@@ -17,6 +18,8 @@ $(document).ready(function(){
   });
   $(".ben2").click(function(){
     $("#cek2").html("BENAR!!");
+    nilai+=1;
+    console.log(nilai);
     testes();
   });
 });
