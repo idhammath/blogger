@@ -3,5 +3,5 @@ $( "#tombol").click(function() {
   var indkod=kode.indexOf(kod);
   if(indkod>-1){
   window.location = link[indkod];}
-  else{$('#myModal').modal('show')};
+  else{$('#\\#myModal').modal('show')};
 });
