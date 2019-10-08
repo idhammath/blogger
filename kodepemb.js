@@ -3,5 +3,5 @@ $( "#tombol").click(function() {
   var indkod=kode.indexOf(kod);
   if(indkod>-1){
   window.location = link[indkod];}
-  else{alert("masukkan kode dengan benar")};
+  else{$('#myModal').modal('show')};
 });
