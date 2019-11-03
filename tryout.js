@@ -1,10 +1,10 @@
-	  var xmlhttp = new XMLHttpRequest();
+   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       tes(this);
     }
   };
-  xmlhttp.open("GET", "https://cdn.statically.io/gh/idhammath/blogger/46c8668d/tryout.xml", true);
+  xmlhttp.open("GET", "https://cdn.statically.io/gh/idhammath/blogger/822ba4df/tryout.xml", true);
   xmlhttp.send();
   function tes(xml) {
   var i;
@@ -12,5 +12,7 @@
   var x = xmlDoc.getElementsByTagName("nomor");
   var isi=x[0].getElementsByTagName("soal")[0].childNodes[0].nodeValue;
   document.getElementById("hehe").innerHTML = isi;
+  var math = document.getElementById("isi");
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);
   document.getElementById("byk").innerHTML = x[0].getElementsByTagName("soal").length;
 }
