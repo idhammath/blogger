@@ -4,7 +4,7 @@
       tes(this);
     }
   };
-  xmlhttp.open("GET", "https://cdn.statically.io/gh/idhammath/blogger/872d1ac4/tryout.xml", true);
+  xmlhttp.open("GET", "https://cdn.statically.io/gh/idhammath/blogger/f12590ff/tryout.xml", true);
   xmlhttp.send();
   function tes(xml) {
   var i;
