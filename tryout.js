@@ -10,7 +10,7 @@
   var i;
   var xmlDoc = xml.responseXML;
   var x = xmlDoc.getElementsByTagName("nomor");
-  var isi=x[0].getElementsByTagName("soal")[1].childNodes[0].nodeValue;
+  var isi=x[0].getElementsByTagName("soal")[0].childNodes[0].nodeValue;
   document.getElementById("hehe").innerHTML = isi;
   document.getElementById("byk").innerHTML = x[0].getElementsByTagName("soal").length;
 }
