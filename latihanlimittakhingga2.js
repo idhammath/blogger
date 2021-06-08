@@ -1,8 +1,8 @@
 function ac(angka){
     return Math.floor(Math.random()*angka)
 }
-const tanda = ["+","-"];
-const tando = ["","-"];
+var tanda = ["+","-"];
+var tando = ["","-"];
 function tand(){
     return tanda[ac(2)]
 }
@@ -83,10 +83,10 @@ if(no3[5]%no3[0]==0){
     no3[19]=no3[5]/no3[0]
 }else{no3[19]=String.raw`<m>\dfrac{${no3[5]/fpb2(no3[0],no3[5])}}{${no3[0]/fpb2(no3[0],no3[5])}}</m>`}
 
-const i1 = ac(2);
-const i2 = ac(2);
-const no4temp1 = 3+ac(8);
-const no4temp2 = 2+ac(no4temp1-2);
+var i1 = ac(2);
+var i2 = ac(2);
+var no4temp1 = 3+ac(8);
+var no4temp2 = 2+ac(no4temp1-2);
 var no4 = [Math.pow(no4temp1,2),Math.pow(no4temp2,2),2+ac(19),2+ac(19)]
 while (no4[2]==no4[3]) {
     no4[2]=2+ac(19);
@@ -104,10 +104,10 @@ if(Math.abs(Math.pow(-1,i1)*no4[2]+Math.pow(-1,i2)*no4[3])%(2*no4temp1)==0){
 if(Math.abs(-1*Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3])%(2*no4temp1)==0){
     no4[8]=(-1*Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3])/(2*no4temp1)
 }else{no4[8]=String.raw`<m>${tando[(1-((-1*Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3])/Math.abs(-1*Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3])))/2]}\dfrac{${Math.abs(-1*Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3])/fpb2(-1*Math.abs(Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3]),(2*no4temp1))}}{${(2*no4temp1)/fpb2(-1*Math.abs(Math.pow(-1,i1)*no4[2]-Math.pow(-1,i2)*no4[3]),(2*no4temp1))}}</m>`}
-const i3 = ac(2);
-const i4 = ac(2);
-const no5temp2 = 3+ac(8);
-const no5temp1 = 2+ac(no5temp2-2);
+var i3 = ac(2);
+var i4 = ac(2);
+var no5temp2 = 3+ac(8);
+var no5temp1 = 2+ac(no5temp2-2);
 var no5 = [Math.pow(no5temp1,2),Math.pow(no5temp2,2),2+ac(19),2+ac(19),2+ac(98),2+ac(98)]
 while (no5[2]==no5[3]) {
     no5[2]=2+ac(19);
@@ -123,7 +123,7 @@ if(Math.abs(-1*Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3])%(2*no5temp1)==0){
     no5[8]=(-1*Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3])/(2*no5temp1)
 }else{no5[8]=String.raw`<m>${tando[(1-((-1*Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3])/Math.abs(-1*Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3])))/2]}\dfrac{${Math.abs(-1*Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3])/fpb2(-1*Math.abs(Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3]),(2*no5temp1))}}{${(2*no5temp1)/fpb2(-1*Math.abs(Math.pow(-1,i1)*no5[2]-Math.pow(-1,i2)*no5[3]),(2*no5temp1))}}</m>`}
 
-const no6temp = 2+ac(9);
+var no6temp = 2+ac(9);
 var no6 = [Math.pow(no6temp,2),2+ac(19),2+ac(19),2+ac(98),2+ac(98)];
 while (no6[1]==no6[2]) {
     no6[1]=2+ac(19);
@@ -137,7 +137,7 @@ if((no6[1]+no6[2])%(2*no6temp)==0){
 }else{no6[6]=String.raw`<m>\dfrac{${(no6[1]+no6[2])/fpb2((no6[1]+no6[2]),2*no6temp)}}{${(2*no6temp)/fpb2((no6[1]+no6[2]),2*no6temp)}}</m>`}
 no6[7]=String.raw`<m>-\dfrac{${(no6[1]+no6[2])/fpb2((no6[1]+no6[2]),2*no6temp)}}{${(2*no6temp)/fpb2((no6[1]+no6[2]),2*no6temp)}}</m>`
 
-const no7temp = 2+ac(9);
+var no7temp = 2+ac(9);
 var no7 = [Math.pow(no7temp,2),2+ac(19),2+ac(19),2+ac(98),2+ac(98)];
 while (no7[1]==no7[2]) {
     no7[1]=2+ac(19);
@@ -152,7 +152,7 @@ if(Math.abs(no7[1]-no7[2])%(2*no7temp)==0){
 }else{no7[6]=String.raw`<m>${tando[(1-(no7[1]-no7[2])/Math.abs(no7[1]-no7[2]))/2]}\dfrac{${Math.abs(no7[1]-no7[2])/fpb2(Math.abs(no7[1]-no7[2]),2*no7temp)}}{${(2*no7temp)/fpb2(Math.abs(no7[1]-no7[2]),2*no7temp)}}</m>`;
 no7[7]=String.raw`<m>${tando[(1-(no7[2]-no7[1])/Math.abs(no7[2]-no7[1]))/2]}\dfrac{${Math.abs(no7[2]-no7[1])/fpb2(Math.abs(no7[2]-no7[1]),2*no7temp)}}{${(2*no7temp)/fpb2(Math.abs(no7[2]-no7[1]),2*no7temp)}}</m>`}
 
-const no8temp = 2+ac(9);
+var no8temp = 2+ac(9);
 var no8 = [Math.pow(no7temp,2),2+ac(19),2+ac(19),2+ac(98),2+ac(98)];
 while (no8[1]==no8[2]) {
     no8[1]=2+ac(19);
