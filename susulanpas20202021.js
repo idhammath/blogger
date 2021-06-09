@@ -67,7 +67,7 @@ for(let i=0;i<8;i++){
     no11[i]=Math.pow(-1,ac(2))*(1+ac(9));
 }
 
-var no13=10+ac(10);
+var no13=[10+ac(10)];
 for(let i=1;i<3;i++){
     no13[i]=no13[i-1]+3;
 }
